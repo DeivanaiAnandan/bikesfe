@@ -27,7 +27,7 @@ export const userRegister=(reqObj)=>async dispatch=>{
 
     try {
         const response = await axios.post('https://devbikes-tyne.onrender.com/api/users/register' , reqObj)
-        message.success('Registration successfull'
+        message.success('Registration successfull')
         setTimeout(() => {
             window.location.href='/login'
          

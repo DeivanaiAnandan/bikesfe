@@ -6,7 +6,7 @@ export const getAllBikes=()=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true})
 
     try {
-        const response = await axios.get('/api/bikes/getallbikes')
+        const response = await axios.get('https://devbikes-tyne.onrender.com/api/bikes/getallbikes')
         dispatch({type: 'GET_ALL_BIKES', payload:response.data})
         dispatch({type: 'LOADING' , payload:false})
     } catch (error) {
@@ -19,7 +19,7 @@ export const addBike=(reqObj)=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true})
 
     try {
-         await axios.post('/api/bikes/addbike', reqObj)
+         await axios.post('https://devbikes-tyne.onrender.com/api/bikes/addbike', reqObj)
         
         dispatch({type: 'LOADING' , payload:false})
         message.success('New Bike added succesfully')
@@ -36,7 +36,7 @@ export const editBike=(reqObj)=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true})
 
     try {
-         await axios.post('/api/bikes/editbike', reqObj)
+         await axios.post('https://devbikes-tyne.onrender.com/api/bikes/editbike', reqObj)
         
         dispatch({type: 'LOADING' , payload:false})
         message.success('Bike updated successfully')
@@ -53,7 +53,7 @@ export const deleteBike=(reqObj)=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true})
 
     try {
-         await axios.post('/api/bikes/deletebike', reqObj)
+         await axios.post('https://devbikes-tyne.onrender.com/api/bikes/deletebike', reqObj)
         
         dispatch({type: 'LOADING' , payload:false})
         message.success('Bike deleted successfully')

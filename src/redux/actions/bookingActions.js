@@ -5,7 +5,7 @@ export const bookBike=(reqObj)=>async dispatch=>{
     dispatch({type: 'LOADING' , payload:true});
 
     try {
-        await axios.post('/api/bookings/bookbike', reqObj)
+        await axios.post('https://devbikes-tyne.onrender.com/api/bookings/bookbike', reqObj)
         
         dispatch({type: 'LOADING' , payload:false})
         message.success("Your bike booked successfully")

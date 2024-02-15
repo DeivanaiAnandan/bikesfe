@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap');
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:azure!important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.bs1{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.spinner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:9999;
+}
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  color : orangered!important;
+}
+.p{
+  margin: 5px !important;
+  text-align:left;
+  padding:0;
+}
+.btn1{
+  box-shadow: none!important;
+  background-color: white;
+  border: 1px solid orangered !important;
+  color:orangered;
+  padding: 3px 10px!important;
+  outline:none!important;
+}
+.btn1:focus{
+  /* border:none!important; */
+}
+.header{
+  padding:10px;
+  
+}
+.header .ant-btn{
+  box-shadow: none!important;
+  background-color: white;
+  border: 1px solid orangered !important;
+  color:orangered;
+  padding: 3px 10px!important;
+  outline:none!important;
+}
+.content{
+  min-height: 90vh;
+}
+
+.bikeimg{
+  height:180px;
+  width: auto;
+  border-radius: 5px;
+  /* transform: translateY(-60px); */
+}
+
+.bike{
+  border-radius:5px;
+}
+.login{
+  background-color: black;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+.login label , .login h1{
+  color: white !important;
+  opacity: 0.6;
+}
+.login-form{
+  background-color: #1F1F1F;
+}
+.login-form input{
+  background-color: #333333 !important;
+  border : none !important;
+  color: white;
+  opacity: 0.5;
+}
+.login-logo{
+  position: absolute;
+  left:0;
+  right:0;
+  /* top: 60%;
+  bottom: 50%; */
+  transform: translateY(-50% , -50%);
+  font-size:45px;
+  opacity: 0.2 !important;
+  
+
+}
+.login a{
+  color: white !important;
+  opacity: 0.5;
+}
+.bikeimg2{
+  height: 400px;
+  border-radius: 10px;
+  width: auto;
+}
+svg{
+  height: 20px!important;
+  width: 20px!important;
+}
+a{
+  color: orangered !important;
+  text-decoration: none!important;
+}
+.booking-card{
+  text-align: left;
+}
+.admbtn{
+  justify-content: space-around
+}
+
+  @media only screen and (max-width: 575px) {
+    .pdbtn{
+      margin-left: 20px!important;
+    }
+  }
